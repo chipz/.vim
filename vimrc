@@ -71,7 +71,8 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 let mapleader=","
 
 " Binding for visualization
-nnoremap <Leader>vh :nohlsearch<CR>
+"nnoremap <Leader>vh :nohlsearch<CR>
+nmap \q :nohlsearch<CR>
 nnoremap <Leader>vl :set list!<CR>
 
 " Find couple with Tab
