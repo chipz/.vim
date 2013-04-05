@@ -39,6 +39,7 @@ set wrap
 " Just please, don't clutter my filesystem
 set nobackup
 set noswapfile
+set noundofile "so vim dont create any .un~ file
 
 " Set search setting
 set ignorecase
@@ -78,6 +79,11 @@ nnoremap <Leader>vl :set list!<CR>
 " Find couple with Tab
 nnoremap <Tab> %
 vnoremap <Tab> %
+
+" Switch between tabs
+noremap <C-l> :tabn<CR>
+noremap <C-h> :tabp<CR>
+noremap <C-n> :tabn<CR>
 
 " Enable more natural movement
 nnoremap j gj
