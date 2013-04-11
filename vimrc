@@ -39,7 +39,9 @@ set wrap
 " Just please, don't clutter my filesystem
 set nobackup
 set noswapfile
-set noundofile "so vim dont create any .un~ file
+"so vim dont create any .un~ file
+set noundofile
+set nowritebackup
 
 " Set search setting
 set ignorecase
@@ -84,6 +86,7 @@ vnoremap <Tab> %
 noremap <C-l> :tabn<CR>
 noremap <C-h> :tabp<CR>
 noremap <C-n> :tabn<CR>
+noremap <C-Tab> : tabn<CR>
 
 " Enable more natural movement
 nnoremap j gj
