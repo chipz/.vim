@@ -40,8 +40,14 @@ set wrap
 set nobackup
 set noswapfile
 "so vim dont create any .un~ file
-set noundofile
+"set noundofile "get commented
 set nowritebackup
+
+" vim backup cannot get ridden, move to a folder instead
+set undodir=~/.vim/undodir
+set undofile
+set undolevels = 1000
+set undoreload = 10000
 
 " Set search setting
 set ignorecase
@@ -126,6 +132,10 @@ vnoremap < <gv
 nnoremap <F1> <Esc>
 inoremap <F1> <Esc>
 vnoremap <F1> <Esc>
+
+
+" Combo to Esc key
+map! ;; <Esc>
 
 
 "==============================================================================="
