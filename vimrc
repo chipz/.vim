@@ -46,8 +46,8 @@ set nowritebackup
 " vim backup cannot get ridden, move to a folder instead
 set undodir=~/.vim/undodir
 set undofile
-set undolevels = 1000
-set undoreload = 10000
+set undolevels=1000
+set undoreload=10000
 
 " Set search setting
 set ignorecase
@@ -56,6 +56,9 @@ set gdefault
 set incsearch
 set showmatch
 set hlsearch
+
+" Change dir
+set autochdir
 
 " Turn syntax on 
 if &t_Co > 2 || has("gui_running")
