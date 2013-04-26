@@ -107,6 +107,12 @@ nnoremap <Up> gk
 nnoremap <Left> <C-h>
 nnoremap <Right> <Space>
 
+"More natural way spliting
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Make inserting lines easier on normal mode
 nnoremap <S-CR> O<Esc>
 nnoremap <CR> o<Esc>
