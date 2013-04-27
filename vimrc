@@ -74,6 +74,11 @@ endif
 " Disable comment auto completion.
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+" Adding go support
+set rtp+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
+
 
 "==============================================================================="
 "   Various keyboard setting
