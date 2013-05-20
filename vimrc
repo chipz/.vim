@@ -12,6 +12,13 @@ filetype plugin indent on
 " Vi-compatibility clearly makes Vim not optimal
 set nocompatible
 
+" Better copy & paste
+set pastetoggle=<F3>
+set clipboard=unnamed
+
+" automatically reload vimrc when it's saved
+au BufWritePost .vimrc so ~/.vimrc
+
 " Tab setting
 set tabstop=4
 set shiftwidth=4
@@ -150,6 +157,9 @@ vnoremap <F1> <Esc>
 
 " Combo to Esc key
 map! ;; <Esc>
+
+" Combo Esc alternative
+inoremap jk <Esc>
 
 
 "==============================================================================="
