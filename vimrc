@@ -159,7 +159,7 @@ vnoremap <F1> <Esc>
 map! ;; <Esc>
 
 " Combo Esc alternative
-inoremap jk <Esc>
+map! jk <Esc>
 
 
 "==============================================================================="
