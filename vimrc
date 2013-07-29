@@ -220,3 +220,9 @@ if &t_Co >= 256 || has("gui_running")
     colorscheme up
 endif
 
+"Highlight column after 80
+execute "set colorcolumn=" . join(range(81,335), ',')
+hi ColorColumn ctermbg=235
+
+" automatically reload vimrc when it's saved
+au BufWritePost .vimrc so ~/.vimrc
