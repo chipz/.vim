@@ -104,8 +104,9 @@ nnoremap <Tab> %
 vnoremap <Tab> %
 
 " Switch between tabs
-noremap <C-l> :tabn<CR>
-noremap <C-h> :tabp<CR>
+"commented out due to conflict with switch buffer
+"noremap <C-l> :tabn<CR>
+"noremap <C-h> :tabp<CR>
 noremap <C-n> :tabn<CR>
 noremap <C-Tab> : tabn<CR>
 
@@ -142,9 +143,8 @@ noremap <A-l> <C-w>>
 " Buffer movement configuration
 noremap <C-Left> :bprevious<CR>
 noremap <C-Right> :bnext<CR>
-"commented out due to conflict with switch tab
-"noremap <C-h> :bprevious<CR>
-"noremap <C-l> :bnext<CR>
+noremap <C-h> :bprevious<CR>
+noremap <C-l> :bnext<CR>
 
 " Make indenting easier in visual mode
 vnoremap > >gv
